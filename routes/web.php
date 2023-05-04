@@ -28,3 +28,15 @@ Route::get('/andra', function () {
     return view('andrapk', ['status' => $status]);
 
 });
+
+Route::get('/latihan', function () {
+
+    $member = [
+        ['ign' => 'vastergotland', 'skill' => 'sniper'],
+        ['ign' => 'joker', 'skill' => 'allround'],
+        ['ign' => 'mina', 'skill' => 'strategic'],
+        ['ign' => 'miyoung', 'skill' => 'controller']
+    ];
+
+    return view('latihan', ['member' => $member]);
+});
