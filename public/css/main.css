@@ -1,8 +1,8 @@
 html, body{
-    background-color: #8989b3;
-    color: #cd2d21;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
+    background-color: #090916 !important;
+    color: #cd2d21 !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30;
     height: 100vh;
     margin: 0;
 }
@@ -15,6 +15,11 @@ html, body{
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.logo {
+    max-width: 269px;
+    height: auto;
 }
 
 .position-ref {
