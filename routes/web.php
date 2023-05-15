@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LatihanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,26 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/andra', function () {
-    
-    $status = [
-        ['game' => 'valorant', 'score' => 'good'],
-        ['game' => 'ragnarok', 'score' => 'best'],
-        ['game' => 'dota', 'score' => 'soso']
-    ];
-
-    return view('andrapk', ['status' => $status]);
-
-});
-
-Route::get('/latihan', function () {
-
-    $member = [
-        ['ign' => 'vastergotland', 'skill' => 'sniper'],
-        ['ign' => 'joker', 'skill' => 'allround'],
-        ['ign' => 'mina', 'skill' => 'strategic'],
-        ['ign' => 'miyoung', 'skill' => 'controller']
-    ];
-
-    return view('latihan', ['member' => $member]);
-});
+Route::get('/latihan', [LatihanController::class, 'index']);
+Route::get('/latihan/{id}', [LatihanController::class, 'show']);

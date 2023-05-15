@@ -10,18 +10,10 @@
 </div>
 
 <div class="p-5 full-height">
-
     <div class="content">
-        
         <div class="title m-b-md">
-            Member list
+            Member list - {{ $id }}
         </div>
-            @foreach($member as $members)
-                <div>
-                {{ $members['ign'] }} - {{ $members['skill'] }}
-                </div>
-            @endforeach
-        
     </div>
 </div>
 @endsection
