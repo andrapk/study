@@ -24,6 +24,7 @@
                         <div class="card-body">
                             <h4 class="card-title">{{ $members['ign'] }}</h4>
                             <p class="card-text">{{ $members['skill'] }}</p>
+                            <p class="card-text">{{ $members['weap']}}</p>
                         </div>
                     </div>
                 </div>
